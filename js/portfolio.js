@@ -7,16 +7,14 @@ async function displayQuote() {
         const response = await fetch(quoteUrl);
         const dataText = await response.json();
         const data = JSON.parse(dataText.contents);
-        
+
         const quoteText = data[0].q;
         const quoteAuthor = data[0].a;
 
         quoteCard.innerHTML = `
-            <div class="card">
-                <h3>Quote of the Day</h3>
-                <p>"${quoteText}"</p>
-                <p><em>- ${quoteAuthor}</em></p>
-            </div>
+            <h3>Quote of the Day</h3>
+            <p>"${quoteText}"</p>
+            <p><em>- ${quoteAuthor}</em></p>
         `;
     } catch (error) {
         console.error("Error fetching quote:", error);
