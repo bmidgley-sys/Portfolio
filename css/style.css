@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(135deg, #0a0a0a 40%, #003333 100%);
+    color: #e6faff;
+    font-family: "Roboto Mono", monospace;
+}
+
+header {
+    background: #111;
+    color: #00f7ff;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 3px solid #ff007f;
+}
+
+footer {
+    background: #111;
+    color: #00f7ff;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 3px solid #ff007f;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background: linear-gradient(90deg, #00f7ff, #ff007f);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00f7ff, 0 0 20px #ff007f inset;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.weather-card {
+    background: rgba(20,20,40,0.85);
+    border: 2px solid #00f7ff;
+    border-radius: 14px;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    box-shadow: 0 0 12px #00f7ff, 0 0 20px #ff007f inset;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.card {
+    background: rgba(20,20,40,0.85);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px #ff007f inset;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #ff007f inset;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #ff007f inset;
+}
